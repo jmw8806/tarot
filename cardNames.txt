@@ -1,0 +1,85 @@
+back.jpg
+back1.jpg
+
+x-cups_01.jpg - Ace
+x-cups_02.jpg - Two
+x-cups_03.jpg - Three
+x-cups_04.jpg - Four
+x-cups_05.jpg - Five
+x-cups_06.jpg - Six
+x-cups_07.jpg - Seven
+x-cups_08.jpg - Eight
+x-cups_09.jpg - Nine
+x-cups_10.jpg - Ten
+x-cups_11.jpg - Page
+x-cups_12.jpg - Knight
+x-cups_13.jpg - Queen
+x-cups_14.jpg - King
+
+x-major_chariot.jpg
+x-major_death.jpg
+x-major_devil.jpg
+x-major_emperor.jpg
+x-major_empress.jpg
+x-major_fool.jpg
+x-major_hanged_man.jpg
+x-major_hermit.jpg
+x-major_hierophant.jpg
+x-major_high_priestess.jpg
+x-major_judgement.jpg
+x-major_justice.jpg
+x-major_lovers.jpg
+x-major_magician.jpg
+x-major_moon.jpg
+x-major_star.jpg
+x-major_strength.jpg
+x-major_sun.jpg
+x-major_temperance.jpg
+x-major_tower.jpg
+x-major_wheel_of_fortune-1.jpg
+x-major_world.jpg
+
+pent_01.jpg
+pent_02.jpg
+pent_03.jpg
+pent_04.jpg
+pent_05.jpg
+pent_06.jpg
+pent_07.jpg
+pent_08.jpg
+pent_09.jpg
+pent_10.jpg
+pent_11.jpg
+pent_12.jpg
+pent_13.jpg
+pent_14.jpg
+
+x-swords_01.jpg
+x-swords_02.jpg
+x-swords_03.jpg
+x-swords_04.jpg
+x-swords_05.jpg
+x-swords_06.jpg
+x-swords_07.jpg
+x-swords_08.jpg
+x-swords_09.jpg
+x-swords_10.jpg
+x-swords_11.jpg
+x-swords_12.jpg
+x-swords_13.jpg
+x-swords_14.jpg
+
+x-wands_01.jpg - Ace
+x-wands_02.jpg - 2
+x-wands_03.jpg - 3
+x-wands_04.jpg - 4
+x-wands_05.jpg - 5
+x-wands_06.jpg - 6
+x-wands_07.jpg - 7
+x-wands_08.jpg - 8
+x-wands_09.jpg - 9
+x-wands_10.jpg - 10
+x-wands_11.jpg - Page
+x-wands_12.jpg - Knight
+x-wands_13.jpg - Queen
+x-wands_14.jpg - King

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9799A661-A1DC-410A-9CD5-7555E93DDD6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>tarot</RootNamespace>
+    <AssemblyName>tarot</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TarotMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TarotMain.Designer.cs">
+      <DependentUpon>TarotMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TarotLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TarotLibrary.Designer.cs">
+      <DependentUpon>TarotLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicalReading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhysicalReading.Designer.cs">
+      <DependentUpon>PhysicalReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TarotMain.resx">
+      <DependentUpon>TarotMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TarotLibrary.resx">
+      <DependentUpon>TarotLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhysicalReading.resx">
+      <DependentUpon>PhysicalReading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataObjects\DataObjects.csproj">
+      <Project>{83583905-f7b4-49ca-90fd-e6054c73d378}</Project>
+      <Name>DataObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{11a67a5e-26d0-45f1-84f3-a43465268767}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cups_14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cups05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye Help.ani" />
+    <None Include="Resources\major_chariot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_death.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_devil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_emperor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_empress.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_fool.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_hanged_man.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_hermit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_hierophant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_high_priestess.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_judgement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_justice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_lovers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_magician.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_moon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_star.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_strength.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_sun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_temperance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_tower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_wheel_of_fortune-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_world.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pent_14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swords_14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wands_14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\data\tarot_info.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\major_wheel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woodTableBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tableBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eye Help.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aibackground.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

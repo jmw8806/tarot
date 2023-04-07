@@ -1,0 +1,79 @@
+00	The Fool	"Youthful energy, fresh starts, new beginnings, naïveté, start of a cycle"	"Foolish, jumping in before looking, getting ahead of yourself."	major_fool
+01	The Magician	"Creation, manifestation, capability"	"Misalignment, confusion, destruction"	major_magician
+02	The High Priestess 	Intuition	Blocked Intuition	major_empress
+03	The Emperor	"Authority, power, leadership, confidence, determination"	"Overbearing, overpowering, headstrong, dictatorial"	major_emperor
+04	The Hierophant	"Religion, spirituality, doctrine, teachings"	Dogma	major_hierophant
+05	The Lovers	"Relationships, love, romance, partnerships, duality"	"Blind love, giving away of power, loss of self"	major_lovers
+06	The Chariot	"Strength, perseverance, endurance, emotional stability"	"Lack of direction, self doubt, scattered energy"	major_chariot
+07	Strength	"Strength, courage, bravery, vulnerability"	"Aggression, forcing, hotheaded"	major_strength
+08	The Hermit	"Introspection, reflection, solace, insight, wisdom, retreat "	"Loneliness, lost"	major_hermit
+09	Wheel of Fortune	Changing Luck	"Changing cycles, destiny, devine timing, luck "	major_wheel_of_fortune-1
+10	Justice	"Justice, equality, equity, fairness, adroitness, righteousness, morals, ethics"	"Immoral, unjust, unfair"	major_justice
+11	The Hanged Man	"Wait, pause, liminal, inaction"	Skewed perception	major_hanged_man
+12	Death	"Change, transformation, transmutation, end of a cycle, rebirth"	Resisting change	major_death
+13	Temperance	"Temperance, moderation, patience"	Forcing	major_temperance
+14	The Devil	"Materialism, obsessions, compulsions, addictions"	Freedom of negative habits	major_devil
+15	The Tower	"Change, destruction, upheaval"	"Illness, obstacles, losses, volatile situation"	major_tower
+16	The Star	"Hope, reset, refresh, regeneration, faith, trust"	"Loss of hope, loss of faith"	major_star
+17	The Moon	"Intuition, illusions, confusion, secrets, mysteries, unknown"	"Lies, deceit"	major_moon
+18	The Sun	"Joy, happiness, victory, success, abundance, vitality"	Resisting joy	major_sun
+19	Judgement	"Judgment, reflection, legacy, contemplation"	Overly judgemental	major_judgement
+20	The World	"End of a cycle, completion, satisfaction"	"Resisting endings, completion or growth"	major_world
+21	High Priestess	"Unconscious, intuition, mystery, spirituality, higher power, inner voice"	"Repressed intuition, hidden motives, superficiality, confusion, cognitive dissonance"	major_high_priestess
+22	Justice	"cause and effect, clarity, truth"	"dishonesty, unaccountability, unfairness"	major_justice
+23	Ace of Wands	"creation, willpower, inspiration, desire"	"lack of energy, lack of passion, boredom"	wands_01
+24	Two of Wands	"planning, making decisions, leaving home"	"fear of change, playing safe, bad planning"	wands_02
+25	Three of Wands	"looking ahead, expansion, rapid growth"	"obstacles, delays, frustration"	wands_03
+26	Four of Wands	"community, home, celebration"	"lack of support, transience, home conflicts"	wands_04
+27	Five of Wands	"competition, rivalry, conflict"	"avoiding conflict, respecting differences"	wands_05
+28	Six of Wands	"victory, success, public reward"	"excess pride, lack of recognition, punishment"	wands_06
+29	Seven of Wands	"perseverance, defensive, maintaining control"	"give up, destroyed confidence, overwhelmed"	wands_07
+30	Eight of Wands	"rapid action, movement, quick decisions"	"panic, waiting, slowdown"	wands_08
+31	Nine of Wands	"resilience, grit, last stand"	"exhaustion, fatigue, questioning motivations"	wands_09
+32	Ten of Wands	"accomplishment, responsibility, burden"	"inability to delegate, overstressed, burnt out"	wands_10
+33	Page of Wands	"exploration, excitement, freedom"	" lack of direction, procrastination, creating conflict"	wands_11
+34	Knight of Wands	"action, adventure, fearlessness"	"anger, impulsiveness, recklessness"	wands_12
+35	Queen of Wands	"courage, determination, joy"	"selfishness, jealousy, insecurities"	wands_13
+36	King of Wands	"big picture, leader, overcoming challenges"	"impulsive, overbearing, unachievable expectations"	wands_14
+37	Ace of Cups	"new feelings, spirituality, intuition"	"emotional loss, blocked creativity, emptiness"	cups_01
+38	Two of Cups	"unity, partnership, connection"	"imbalance, broken communication, tension"	cups_02
+39	Three of Cups	"friendship, community, happiness"	"overindulgence, gossip, isolation"	cups_03
+40	Four of Cups	"apathy, contemplation, disconnectedness"	"sudden awareness, choosing happiness, acceptance"	cups_04
+41	Five of Cups	"loss, grief, self-pity"	"acceptance, moving on, finding peace"	cups_05
+42	Six of Cups	"familiarity, happy memories, healing"	"moving forward, leaving home, independence"	cups_06
+43	Seven of Cups	"searching for purpose, choices, daydreaming"	"lack of purpose, diversion, confusion"	cups_07
+44	Eight of Cups	"walking away, disillusionment, leaving behind"	"avoidance, fear of change, fear of loss"	cups_08
+45	Nine of Cups	"satisfaction, emotional stability, luxury"	"lack of inner joy, smugness, dissatisfaction"	cups_09
+46	Ten of Cups	"inner happiness, fulfillment, dreams coming true"	"shattered dreams, broken family, domestic disharmony"	cups_10
+47	Page of Cups	"happy surprise, dreamer, sensitivity "	"emotional immaturity, insecurity, disappointment"	cups_11
+48	Knight of Cups	"following the heart, idealist, romantic "	" moodiness, disappointment"	cups_12
+49	Queen of Cups	"compassion, calm, comfort"	"martyrdom, insecurity, dependence"	cups_13
+50	King of Cups	"compassion, control, balance"	"coldness, moodiness, bad advice"	cups_14
+51	Ace of Swords	"breakthrough, clarity, sharp mind"	"confusion, brutality, chaos"	swords_01
+52	Two of Swords	"difficult choices, indecision, stalemate"	"lesser of two evils, no right choice, confusion"	swords_02
+53	Three of Swords	"heartbreak, suffering, grief"	"recovery, forgiveness, moving on"	swords_03
+54	Four of Swords	"rest, restoration, contemplation"	"restlessness, burnout, stress"	swords_04
+55	Five of Swords	"unbridled ambition, win at all costs, sneakiness"	"lingering resentment, desire to reconcile, forgiveness"	swords_05
+56	Six of Swords	"transition, leaving behind, moving on"	"emotional baggage, unresolved issues, resisting transition"	swords_06
+57	Seven of Swords	"deception, trickery, tactics and strategy"	"coming clean, rethinking approach, deception"	swords_07
+58	Eight of Swords	"imprisonment, entrapment, self-victimization"	"self acceptance, new perspective, freedom"	swords_08
+59	Nine of Swords	"anxiety, hopelessness, trauma"	"hope, reaching out, despair"	swords_09
+60	Ten of Swords	"failure, collapse, defeat"	"can't get worse, only upwards, inevitable end"	swords_10
+61	Page of Swords	"curiosity, restlessness, mental energy"	"deception, manipulation, all talk"	swords_11
+62	Knight of Swords	"action, impulsiveness, defending beliefs"	"no direction, disregard for consequences, unpredictability"	swords_12
+63	Queen of Swords	"complexity, perceptiveness, clear mindedness "	"cold hearted, cruel, bitterness"	swords_13
+64	King of Swords	"head over heart, discipline, truth"	"manipulative, cruel, weakness"	swords_14
+65	Ace of Pentacles	"opportunity, prosperity, new venture"	"lost opportunity, missed chance, bad investment"	pent_01
+66	Two of Pentacles	"balancing decisions, priorities, adapting to change"	"loss of balance, disorganized, overwhelmed"	pent_02
+67	Three of Pentacles	"teamwork, collaboration, building"	"lack of teamwork, disorganized, group conflict"	pent_03
+68	Four of Pentacles	"conservation, frugality, security"	"greediness, stinginess, possessiveness"	pent_04
+69	Five of Pentacles	"need, poverty, insecurity"	"recovery, charity, improvement"	pent_05
+70	Six of Pentacles	"charity, generosity, sharing"	"strings attached, stinginess, power and domination"	pent_06
+71	Seven of Pentacles	"hard work, perseverance, diligence"	"work without results, distractions, lack of rewards"	pent_07
+72	Eight of Pentacles	"apprenticeship, passion, high standards "	"lack of passion, uninspired, no motivation"	pent_08
+73	Nine of Pentacles	"fruits of labor, rewards, luxury"	"reckless spending, living beyond means, false success"	pent_09
+74	Ten of Pentacles	"legacy, culmination, inheritance"	"fleeting success, lack of stability, lack of resources"	pent_10
+75	Page of Pentacles	"ambition, desire, diligence"	"lack of commitment, greediness, laziness"	pent_11
+76	Knight of Pentacles	"efficiency, hard work, responsibility"	"laziness, obsessiveness, work without reward"	pent_12
+77	Queen of Pentacles	"practicality, creature comforts, financial security"	"self-centeredness, jealousy, smothering"	pent_13
+78	King of Pentacles	"abundance, prosperity, security"	"greed, indulgence, sensuality"	pent_14

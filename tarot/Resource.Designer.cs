@@ -243,6 +243,16 @@ namespace tarot {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lightingEffect {
+            get {
+                object obj = ResourceManager.GetObject("lightingEffect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap major_chariot {
             get {
                 object obj = ResourceManager.GetObject("major_chariot", resourceCulture);

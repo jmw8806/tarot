@@ -17,18 +17,18 @@ namespace tarot
     public partial class TarotLibrary : Form
     {
         ResourceManager _rm = new ResourceManager("Tarot.Resource", Assembly.GetExecutingAssembly());
-        Deck _deck = new Deck();
+        Spread _spread = new Spread();
         
         public TarotLibrary()
         {
             InitializeComponent();
+            
         }
 
         private void listLibrary_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<Card> deck = _deck.newDeck();
             int selectedIndex = listLibrary.SelectedIndex;
-            string[] card = CardManager.getCardById(deck, selectedIndex.ToString());
+            string[] card = _spread.findCardByID(selectedIndex.ToString());
             lblCardName.Visible = true;
             lblCardName.Text = card[1];
             lblUprightDescription.Visible = true;
@@ -36,6 +36,11 @@ namespace tarot
             lblReversedDescription.Visible = true;
             lblReversedDescription.Text = card[3];
             imgCardLibrary.Image = (Image)_rm.GetObject(card[4]);
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
         }
     }
 }

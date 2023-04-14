@@ -18,9 +18,9 @@ namespace DataAccess
             List<Card> cards = new List<Card>();
            try
             {
-                var filePath = @"C:\\Users\\jmw66\\source\repos\\tarot\\tarot\\bin\\Debug\\data\\tarot_info.txt";
-                StreamReader fileReader = new StreamReader(filePath);
-
+         
+                StreamReader fileReader = new StreamReader(AppData.DataPath + "\\tarot_info.txt");
+                
                 char[] separator = { '\t' };
                 while (fileReader.EndOfStream == false)
                 {
@@ -43,8 +43,30 @@ namespace DataAccess
                 throw;
             }
             return cards;
-          
-          
+
+        }
+
+        public void SaveSpread(string[][] cards)
+        {
+            try
+            {
+                string line = "";
+                StreamWriter fileWriter = new StreamWriter(AppData.DataPath + "\\save_data.txt");
+                for(int i = 0; i < cards.Length; i++)
+                {
+                    for(int j = 0; j < 3; j++)
+                    {
+                        line += j.ToString() + "\t";
+                    }
+                    line += cards[i][4].ToString() + "\n";                   
+                }
+
+                fileWriter.WriteLine(line);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
           
     }

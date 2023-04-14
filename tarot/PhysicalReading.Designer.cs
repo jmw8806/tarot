@@ -31,268 +31,132 @@ namespace tarot
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhysicalReading));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.imgCard1 = new System.Windows.Forms.PictureBox();
-            this.imgCard2 = new System.Windows.Forms.PictureBox();
-            this.imgCard3 = new System.Windows.Forms.PictureBox();
-            this.listName1 = new System.Windows.Forms.ComboBox();
-            this.listName2 = new System.Windows.Forms.ComboBox();
-            this.listName3 = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.textDescription1 = new System.Windows.Forms.TextBox();
-            this.textDescription2 = new System.Windows.Forms.TextBox();
             this.textDescription3 = new System.Windows.Forms.TextBox();
+            this.textDescription2 = new System.Windows.Forms.TextBox();
+            this.checkBoxReversed3 = new System.Windows.Forms.CheckBox();
+            this.checkBoxReversed2 = new System.Windows.Forms.CheckBox();
+            this.listName3 = new System.Windows.Forms.ComboBox();
+            this.imgCard3 = new System.Windows.Forms.PictureBox();
+            this.imgCard2 = new System.Windows.Forms.PictureBox();
+            this.imgCard1 = new System.Windows.Forms.PictureBox();
+            this.listName1 = new System.Windows.Forms.ComboBox();
+            this.checkBoxReversed1 = new System.Windows.Forms.CheckBox();
+            this.textDescription1 = new System.Windows.Forms.TextBox();
+            this.listName2 = new System.Windows.Forms.ComboBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCard1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCard2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCard2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCard1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.36719F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.63281F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 264F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 535F));
             this.tableLayoutPanel1.Controls.Add(this.textDescription3, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.textDescription2, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox3, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox2, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxReversed3, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxReversed2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.listName3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.imgCard3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.imgCard2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.imgCard1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.listName1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.checkBoxReversed1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.textDescription1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.listName2, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(97, 30);
+            this.tableLayoutPanel1.Controls.Add(this.btnClose, 2, 4);
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Ink Free", 7.875F);
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.Coral;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(194, 58);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.23077F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.76923F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(763, 553);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.3924F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.607594F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 253F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 137F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1526, 1176);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // imgCard1
+            // textDescription3
             // 
-            this.imgCard1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imgCard1.Image = global::tarot.Resource.back;
-            this.imgCard1.Location = new System.Drawing.Point(43, 24);
-            this.imgCard1.Name = "imgCard1";
-            this.imgCard1.Size = new System.Drawing.Size(170, 302);
-            this.imgCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgCard1.TabIndex = 0;
-            this.imgCard1.TabStop = false;
+            this.textDescription3.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.textDescription3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textDescription3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textDescription3.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textDescription3.ForeColor = System.Drawing.Color.Coral;
+            this.textDescription3.Location = new System.Drawing.Point(998, 791);
+            this.textDescription3.Margin = new System.Windows.Forms.Padding(8, 6, 6, 6);
+            this.textDescription3.Multiline = true;
+            this.textDescription3.Name = "textDescription3";
+            this.textDescription3.ReadOnly = true;
+            this.textDescription3.Size = new System.Drawing.Size(522, 241);
+            this.textDescription3.TabIndex = 11;
+            this.textDescription3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // imgCard2
+            // textDescription2
             // 
-            this.imgCard2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imgCard2.Image = global::tarot.Resource.back;
-            this.imgCard2.Location = new System.Drawing.Point(292, 24);
-            this.imgCard2.Name = "imgCard2";
-            this.imgCard2.Size = new System.Drawing.Size(170, 302);
-            this.imgCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgCard2.TabIndex = 1;
-            this.imgCard2.TabStop = false;
+            this.textDescription2.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.textDescription2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textDescription2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textDescription2.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textDescription2.ForeColor = System.Drawing.Color.Coral;
+            this.textDescription2.Location = new System.Drawing.Point(517, 791);
+            this.textDescription2.Margin = new System.Windows.Forms.Padding(8, 6, 6, 6);
+            this.textDescription2.Multiline = true;
+            this.textDescription2.Name = "textDescription2";
+            this.textDescription2.ReadOnly = true;
+            this.textDescription2.Size = new System.Drawing.Size(467, 241);
+            this.textDescription2.TabIndex = 10;
+            this.textDescription2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // imgCard3
+            // checkBoxReversed3
             // 
-            this.imgCard3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.imgCard3.Image = global::tarot.Resource.back;
-            this.imgCard3.Location = new System.Drawing.Point(545, 24);
-            this.imgCard3.Name = "imgCard3";
-            this.imgCard3.Size = new System.Drawing.Size(170, 302);
-            this.imgCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgCard3.TabIndex = 2;
-            this.imgCard3.TabStop = false;
+            this.checkBoxReversed3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxReversed3.AutoSize = true;
+            this.checkBoxReversed3.Enabled = false;
+            this.checkBoxReversed3.Font = new System.Drawing.Font("Ink Free", 12.875F, System.Drawing.FontStyle.Bold);
+            this.checkBoxReversed3.ForeColor = System.Drawing.Color.Gold;
+            this.checkBoxReversed3.Location = new System.Drawing.Point(1160, 723);
+            this.checkBoxReversed3.Margin = new System.Windows.Forms.Padding(6);
+            this.checkBoxReversed3.Name = "checkBoxReversed3";
+            this.checkBoxReversed3.Size = new System.Drawing.Size(195, 47);
+            this.checkBoxReversed3.TabIndex = 8;
+            this.checkBoxReversed3.Text = "Reversed";
+            this.checkBoxReversed3.UseVisualStyleBackColor = true;
+            this.checkBoxReversed3.CheckedChanged += new System.EventHandler(this.checkBoxReversed3_CheckedChanged);
             // 
-            // listName1
+            // checkBoxReversed2
             // 
-            this.listName1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.listName1.FormattingEnabled = true;
-            this.listName1.Items.AddRange(new object[] {
-            "The Fool",
-            "The Magician",
-            "The High Priestess ",
-            "The Emperor",
-            "The Hierophant",
-            "The Lovers",
-            "The Chariot",
-            "Strength",
-            "The Hermit",
-            "Wheel of Fortune",
-            "Justice",
-            "The Hanged Man",
-            "Death",
-            "Temperance",
-            "The Devil",
-            "The Tower",
-            "The Star",
-            "The Moon",
-            "The Sun",
-            "Judgement",
-            "The World",
-            "High Priestess",
-            "Justice",
-            "Ace of Wands",
-            "Two of Wands",
-            "Three of Wands",
-            "Four of Wands",
-            "Five of Wands",
-            "Six of Wands",
-            "Seven of Wands",
-            "Eight of Wands",
-            "Nine of Wands",
-            "Ten of Wands",
-            "Page of Wands",
-            "Knight of Wands",
-            "Queen of Wands",
-            "King of Wands",
-            "Ace of Cups",
-            "Two of Cups",
-            "Three of Cups",
-            "Four of Cups",
-            "Five of Cups",
-            "Six of Cups",
-            "Seven of Cups",
-            "Eight of Cups",
-            "Nine of Cups",
-            "Ten of Cups",
-            "Page of Cups",
-            "Knight of Cups",
-            "Queen of Cups",
-            "King of Cups",
-            "Ace of Swords",
-            "Two of Swords",
-            "Three of Swords",
-            "Four of Swords",
-            "Five of Swords",
-            "Six of Swords",
-            "Seven of Swords",
-            "Eight of Swords",
-            "Nine of Swords",
-            "Ten of Swords",
-            "Page of Swords",
-            "Knight of Swords",
-            "Queen of Swords",
-            "King of Swords",
-            "Ace of Pentacles",
-            "Two of Pentacles",
-            "Three of Pentacles",
-            "Four of Pentacles",
-            "Five of Pentacles",
-            "Six of Pentacles",
-            "Seven of Pentacles",
-            "Eight of Pentacles",
-            "Nine of Pentacles",
-            "Ten of Pentacles",
-            "Page of Pentacles",
-            "Knight of Pentacles",
-            "Queen of Pentacles",
-            "King of Pentacles"});
-            this.listName1.Location = new System.Drawing.Point(5, 361);
-            this.listName1.Name = "listName1";
-            this.listName1.Size = new System.Drawing.Size(245, 21);
-            this.listName1.TabIndex = 3;
-            // 
-            // listName2
-            // 
-            this.listName2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.listName2.FormattingEnabled = true;
-            this.listName2.Items.AddRange(new object[] {
-            "The Fool",
-            "The Magician",
-            "The High Priestess ",
-            "The Emperor",
-            "The Hierophant",
-            "The Lovers",
-            "The Chariot",
-            "Strength",
-            "The Hermit",
-            "Wheel of Fortune",
-            "Justice",
-            "The Hanged Man",
-            "Death",
-            "Temperance",
-            "The Devil",
-            "The Tower",
-            "The Star",
-            "The Moon",
-            "The Sun",
-            "Judgement",
-            "The World",
-            "High Priestess",
-            "Justice",
-            "Ace of Wands",
-            "Two of Wands",
-            "Three of Wands",
-            "Four of Wands",
-            "Five of Wands",
-            "Six of Wands",
-            "Seven of Wands",
-            "Eight of Wands",
-            "Nine of Wands",
-            "Ten of Wands",
-            "Page of Wands",
-            "Knight of Wands",
-            "Queen of Wands",
-            "King of Wands",
-            "Ace of Cups",
-            "Two of Cups",
-            "Three of Cups",
-            "Four of Cups",
-            "Five of Cups",
-            "Six of Cups",
-            "Seven of Cups",
-            "Eight of Cups",
-            "Nine of Cups",
-            "Ten of Cups",
-            "Page of Cups",
-            "Knight of Cups",
-            "Queen of Cups",
-            "King of Cups",
-            "Ace of Swords",
-            "Two of Swords",
-            "Three of Swords",
-            "Four of Swords",
-            "Five of Swords",
-            "Six of Swords",
-            "Seven of Swords",
-            "Eight of Swords",
-            "Nine of Swords",
-            "Ten of Swords",
-            "Page of Swords",
-            "Knight of Swords",
-            "Queen of Swords",
-            "King of Swords",
-            "Ace of Pentacles",
-            "Two of Pentacles",
-            "Three of Pentacles",
-            "Four of Pentacles",
-            "Five of Pentacles",
-            "Six of Pentacles",
-            "Seven of Pentacles",
-            "Eight of Pentacles",
-            "Nine of Pentacles",
-            "Ten of Pentacles",
-            "Page of Pentacles",
-            "Knight of Pentacles",
-            "Queen of Pentacles",
-            "King of Pentacles"});
-            this.listName2.Location = new System.Drawing.Point(259, 361);
-            this.listName2.Name = "listName2";
-            this.listName2.Size = new System.Drawing.Size(236, 21);
-            this.listName2.TabIndex = 4;
+            this.checkBoxReversed2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxReversed2.AutoSize = true;
+            this.checkBoxReversed2.Enabled = false;
+            this.checkBoxReversed2.Font = new System.Drawing.Font("Ink Free", 12.875F, System.Drawing.FontStyle.Bold);
+            this.checkBoxReversed2.ForeColor = System.Drawing.Color.Gold;
+            this.checkBoxReversed2.Location = new System.Drawing.Point(652, 723);
+            this.checkBoxReversed2.Margin = new System.Windows.Forms.Padding(6);
+            this.checkBoxReversed2.Name = "checkBoxReversed2";
+            this.checkBoxReversed2.Size = new System.Drawing.Size(195, 47);
+            this.checkBoxReversed2.TabIndex = 7;
+            this.checkBoxReversed2.Text = "Reversed";
+            this.checkBoxReversed2.UseVisualStyleBackColor = true;
+            this.checkBoxReversed2.CheckedChanged += new System.EventHandler(this.checkBoxReversed2_CheckedChanged);
             // 
             // listName3
             // 
-            this.listName3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.listName3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.listName3.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.listName3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listName3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.listName3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listName3.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listName3.ForeColor = System.Drawing.Color.Coral;
             this.listName3.FormattingEnabled = true;
             this.listName3.Items.AddRange(new object[] {
             "The Fool",
@@ -374,93 +238,470 @@ namespace tarot
             "Knight of Pentacles",
             "Queen of Pentacles",
             "King of Pentacles"});
-            this.listName3.Location = new System.Drawing.Point(508, 361);
+            this.listName3.Location = new System.Drawing.Point(1015, 654);
+            this.listName3.Margin = new System.Windows.Forms.Padding(6);
             this.listName3.Name = "listName3";
-            this.listName3.Size = new System.Drawing.Size(245, 21);
+            this.listName3.Size = new System.Drawing.Size(486, 47);
             this.listName3.TabIndex = 5;
+            this.listName3.SelectedIndexChanged += new System.EventHandler(this.listName3_SelectedIndexChanged);
             // 
-            // checkBox1
+            // imgCard3
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(92, 398);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(72, 17);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Reversed";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.imgCard3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.imgCard3.Image = global::tarot.Resource.back;
+            this.imgCard3.Location = new System.Drawing.Point(1088, 33);
+            this.imgCard3.Margin = new System.Windows.Forms.Padding(6);
+            this.imgCard3.Name = "imgCard3";
+            this.imgCard3.Size = new System.Drawing.Size(340, 581);
+            this.imgCard3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCard3.TabIndex = 2;
+            this.imgCard3.TabStop = false;
             // 
-            // checkBox2
+            // imgCard2
             // 
-            this.checkBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(341, 398);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(72, 17);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "Reversed";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.imgCard2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.imgCard2.Image = global::tarot.Resource.back;
+            this.imgCard2.Location = new System.Drawing.Point(579, 33);
+            this.imgCard2.Margin = new System.Windows.Forms.Padding(6);
+            this.imgCard2.Name = "imgCard2";
+            this.imgCard2.Size = new System.Drawing.Size(340, 581);
+            this.imgCard2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCard2.TabIndex = 1;
+            this.imgCard2.TabStop = false;
             // 
-            // checkBox3
+            // imgCard1
             // 
-            this.checkBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(594, 398);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(72, 17);
-            this.checkBox3.TabIndex = 8;
-            this.checkBox3.Text = "Reversed";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.imgCard1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.imgCard1.Image = global::tarot.Resource.back;
+            this.imgCard1.Location = new System.Drawing.Point(84, 33);
+            this.imgCard1.Margin = new System.Windows.Forms.Padding(6);
+            this.imgCard1.Name = "imgCard1";
+            this.imgCard1.Size = new System.Drawing.Size(340, 581);
+            this.imgCard1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgCard1.TabIndex = 0;
+            this.imgCard1.TabStop = false;
+            // 
+            // listName1
+            // 
+            this.listName1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.listName1.AutoCompleteCustomSource.AddRange(new string[] {
+            "The Fool",
+            "The Magician",
+            "The High Priestess ",
+            "The Emperor",
+            "The Hierophant",
+            "The Lovers",
+            "The Chariot",
+            "Strength",
+            "The Hermit",
+            "Wheel of Fortune",
+            "Justice",
+            "The Hanged Man",
+            "Death",
+            "Temperance",
+            "The Devil",
+            "The Tower",
+            "The Star",
+            "The Moon",
+            "The Sun",
+            "Judgement",
+            "The World",
+            "High Priestess",
+            "Justice",
+            "Ace of Wands",
+            "Two of Wands",
+            "Three of Wands",
+            "Four of Wands",
+            "Five of Wands",
+            "Six of Wands",
+            "Seven of Wands",
+            "Eight of Wands",
+            "Nine of Wands",
+            "Ten of Wands",
+            "Page of Wands",
+            "Knight of Wands",
+            "Queen of Wands",
+            "King of Wands",
+            "Ace of Cups",
+            "Two of Cups",
+            "Three of Cups",
+            "Four of Cups",
+            "Five of Cups",
+            "Six of Cups",
+            "Seven of Cups",
+            "Eight of Cups",
+            "Nine of Cups",
+            "Ten of Cups",
+            "Page of Cups",
+            "Knight of Cups",
+            "Queen of Cups",
+            "King of Cups",
+            "Ace of Swords",
+            "Two of Swords",
+            "Three of Swords",
+            "Four of Swords",
+            "Five of Swords",
+            "Six of Swords",
+            "Seven of Swords",
+            "Eight of Swords",
+            "Nine of Swords",
+            "Ten of Swords",
+            "Page of Swords",
+            "Knight of Swords",
+            "Queen of Swords",
+            "King of Swords",
+            "Ace of Pentacles",
+            "Two of Pentacles",
+            "Three of Pentacles",
+            "Four of Pentacles",
+            "Five of Pentacles",
+            "Six of Pentacles",
+            "Seven of Pentacles",
+            "Eight of Pentacles",
+            "Nine of Pentacles",
+            "Ten of Pentacles",
+            "Page of Pentacles",
+            "Knight of Pentacles",
+            "Queen of Pentacles",
+            "King of Pentacles"});
+            this.listName1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.listName1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listName1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.listName1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listName1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listName1.ForeColor = System.Drawing.Color.Coral;
+            this.listName1.FormattingEnabled = true;
+            this.listName1.Items.AddRange(new object[] {
+            "The Fool",
+            "The Magician",
+            "The High Priestess ",
+            "The Emperor",
+            "The Hierophant",
+            "The Lovers",
+            "The Chariot",
+            "Strength",
+            "The Hermit",
+            "Wheel of Fortune",
+            "Justice",
+            "The Hanged Man",
+            "Death",
+            "Temperance",
+            "The Devil",
+            "The Tower",
+            "The Star",
+            "The Moon",
+            "The Sun",
+            "Judgement",
+            "The World",
+            "High Priestess",
+            "Justice",
+            "Ace of Wands",
+            "Two of Wands",
+            "Three of Wands",
+            "Four of Wands",
+            "Five of Wands",
+            "Six of Wands",
+            "Seven of Wands",
+            "Eight of Wands",
+            "Nine of Wands",
+            "Ten of Wands",
+            "Page of Wands",
+            "Knight of Wands",
+            "Queen of Wands",
+            "King of Wands",
+            "Ace of Cups",
+            "Two of Cups",
+            "Three of Cups",
+            "Four of Cups",
+            "Five of Cups",
+            "Six of Cups",
+            "Seven of Cups",
+            "Eight of Cups",
+            "Nine of Cups",
+            "Ten of Cups",
+            "Page of Cups",
+            "Knight of Cups",
+            "Queen of Cups",
+            "King of Cups",
+            "Ace of Swords",
+            "Two of Swords",
+            "Three of Swords",
+            "Four of Swords",
+            "Five of Swords",
+            "Six of Swords",
+            "Seven of Swords",
+            "Eight of Swords",
+            "Nine of Swords",
+            "Ten of Swords",
+            "Page of Swords",
+            "Knight of Swords",
+            "Queen of Swords",
+            "King of Swords",
+            "Ace of Pentacles",
+            "Two of Pentacles",
+            "Three of Pentacles",
+            "Four of Pentacles",
+            "Five of Pentacles",
+            "Six of Pentacles",
+            "Seven of Pentacles",
+            "Eight of Pentacles",
+            "Nine of Pentacles",
+            "Ten of Pentacles",
+            "Page of Pentacles",
+            "Knight of Pentacles",
+            "Queen of Pentacles",
+            "King of Pentacles"});
+            this.listName1.Location = new System.Drawing.Point(11, 654);
+            this.listName1.Margin = new System.Windows.Forms.Padding(6);
+            this.listName1.Name = "listName1";
+            this.listName1.Size = new System.Drawing.Size(486, 47);
+            this.listName1.TabIndex = 3;
+            this.listName1.SelectedIndexChanged += new System.EventHandler(this.listName1_SelectedIndexChanged);
+            // 
+            // checkBoxReversed1
+            // 
+            this.checkBoxReversed1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.checkBoxReversed1.AutoSize = true;
+            this.checkBoxReversed1.Enabled = false;
+            this.checkBoxReversed1.Font = new System.Drawing.Font("Ink Free", 12.875F, System.Drawing.FontStyle.Bold);
+            this.checkBoxReversed1.ForeColor = System.Drawing.Color.Gold;
+            this.checkBoxReversed1.Location = new System.Drawing.Point(157, 723);
+            this.checkBoxReversed1.Margin = new System.Windows.Forms.Padding(6);
+            this.checkBoxReversed1.Name = "checkBoxReversed1";
+            this.checkBoxReversed1.Size = new System.Drawing.Size(195, 47);
+            this.checkBoxReversed1.TabIndex = 6;
+            this.checkBoxReversed1.Text = "Reversed";
+            this.checkBoxReversed1.UseVisualStyleBackColor = true;
+            this.checkBoxReversed1.CheckedChanged += new System.EventHandler(this.checkBoxReversed1_CheckedChanged);
             // 
             // textDescription1
             // 
+            this.textDescription1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.textDescription1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textDescription1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textDescription1.Location = new System.Drawing.Point(3, 423);
+            this.textDescription1.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textDescription1.ForeColor = System.Drawing.Color.Coral;
+            this.textDescription1.Location = new System.Drawing.Point(8, 791);
+            this.textDescription1.Margin = new System.Windows.Forms.Padding(8, 6, 6, 6);
             this.textDescription1.Multiline = true;
             this.textDescription1.Name = "textDescription1";
             this.textDescription1.ReadOnly = true;
-            this.textDescription1.Size = new System.Drawing.Size(250, 87);
+            this.textDescription1.Size = new System.Drawing.Size(495, 241);
             this.textDescription1.TabIndex = 9;
+            this.textDescription1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textDescription2
+            // listName2
             // 
-            this.textDescription2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textDescription2.Location = new System.Drawing.Point(259, 423);
-            this.textDescription2.Multiline = true;
-            this.textDescription2.Name = "textDescription2";
-            this.textDescription2.ReadOnly = true;
-            this.textDescription2.Size = new System.Drawing.Size(236, 87);
-            this.textDescription2.TabIndex = 10;
+            this.listName2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.listName2.AutoCompleteCustomSource.AddRange(new string[] {
+            "The Fool",
+            "The Magician",
+            "The High Priestess ",
+            "The Emperor",
+            "The Hierophant",
+            "The Lovers",
+            "The Chariot",
+            "Strength",
+            "The Hermit",
+            "Wheel of Fortune",
+            "Justice",
+            "The Hanged Man",
+            "Death",
+            "Temperance",
+            "The Devil",
+            "The Tower",
+            "The Star",
+            "The Moon",
+            "The Sun",
+            "Judgement",
+            "The World",
+            "High Priestess",
+            "Justice",
+            "Ace of Wands",
+            "Two of Wands",
+            "Three of Wands",
+            "Four of Wands",
+            "Five of Wands",
+            "Six of Wands",
+            "Seven of Wands",
+            "Eight of Wands",
+            "Nine of Wands",
+            "Ten of Wands",
+            "Page of Wands",
+            "Knight of Wands",
+            "Queen of Wands",
+            "King of Wands",
+            "Ace of Cups",
+            "Two of Cups",
+            "Three of Cups",
+            "Four of Cups",
+            "Five of Cups",
+            "Six of Cups",
+            "Seven of Cups",
+            "Eight of Cups",
+            "Nine of Cups",
+            "Ten of Cups",
+            "Page of Cups",
+            "Knight of Cups",
+            "Queen of Cups",
+            "King of Cups",
+            "Ace of Swords",
+            "Two of Swords",
+            "Three of Swords",
+            "Four of Swords",
+            "Five of Swords",
+            "Six of Swords",
+            "Seven of Swords",
+            "Eight of Swords",
+            "Nine of Swords",
+            "Ten of Swords",
+            "Page of Swords",
+            "Knight of Swords",
+            "Queen of Swords",
+            "King of Swords",
+            "Ace of Pentacles",
+            "Two of Pentacles",
+            "Three of Pentacles",
+            "Four of Pentacles",
+            "Five of Pentacles",
+            "Six of Pentacles",
+            "Seven of Pentacles",
+            "Eight of Pentacles",
+            "Nine of Pentacles",
+            "Ten of Pentacles",
+            "Page of Pentacles",
+            "Knight of Pentacles",
+            "Queen of Pentacles",
+            "King of Pentacles"});
+            this.listName2.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.listName2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listName2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.listName2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listName2.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listName2.ForeColor = System.Drawing.Color.Coral;
+            this.listName2.FormattingEnabled = true;
+            this.listName2.Items.AddRange(new object[] {
+            "The Fool",
+            "The Magician",
+            "The High Priestess ",
+            "The Emperor",
+            "The Hierophant",
+            "The Lovers",
+            "The Chariot",
+            "Strength",
+            "The Hermit",
+            "Wheel of Fortune",
+            "Justice",
+            "The Hanged Man",
+            "Death",
+            "Temperance",
+            "The Devil",
+            "The Tower",
+            "The Star",
+            "The Moon",
+            "The Sun",
+            "Judgement",
+            "The World",
+            "High Priestess",
+            "Justice",
+            "Ace of Wands",
+            "Two of Wands",
+            "Three of Wands",
+            "Four of Wands",
+            "Five of Wands",
+            "Six of Wands",
+            "Seven of Wands",
+            "Eight of Wands",
+            "Nine of Wands",
+            "Ten of Wands",
+            "Page of Wands",
+            "Knight of Wands",
+            "Queen of Wands",
+            "King of Wands",
+            "Ace of Cups",
+            "Two of Cups",
+            "Three of Cups",
+            "Four of Cups",
+            "Five of Cups",
+            "Six of Cups",
+            "Seven of Cups",
+            "Eight of Cups",
+            "Nine of Cups",
+            "Ten of Cups",
+            "Page of Cups",
+            "Knight of Cups",
+            "Queen of Cups",
+            "King of Cups",
+            "Ace of Swords",
+            "Two of Swords",
+            "Three of Swords",
+            "Four of Swords",
+            "Five of Swords",
+            "Six of Swords",
+            "Seven of Swords",
+            "Eight of Swords",
+            "Nine of Swords",
+            "Ten of Swords",
+            "Page of Swords",
+            "Knight of Swords",
+            "Queen of Swords",
+            "King of Swords",
+            "Ace of Pentacles",
+            "Two of Pentacles",
+            "Three of Pentacles",
+            "Four of Pentacles",
+            "Five of Pentacles",
+            "Six of Pentacles",
+            "Seven of Pentacles",
+            "Eight of Pentacles",
+            "Nine of Pentacles",
+            "Ten of Pentacles",
+            "Page of Pentacles",
+            "Knight of Pentacles",
+            "Queen of Pentacles",
+            "King of Pentacles"});
+            this.listName2.Location = new System.Drawing.Point(515, 654);
+            this.listName2.Margin = new System.Windows.Forms.Padding(6);
+            this.listName2.Name = "listName2";
+            this.listName2.Size = new System.Drawing.Size(468, 47);
+            this.listName2.TabIndex = 12;
+            this.listName2.SelectedIndexChanged += new System.EventHandler(this.listName2_SelectedIndexChanged);
             // 
-            // textDescription3
+            // btnClose
             // 
-            this.textDescription3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textDescription3.Location = new System.Drawing.Point(501, 423);
-            this.textDescription3.Multiline = true;
-            this.textDescription3.Name = "textDescription3";
-            this.textDescription3.ReadOnly = true;
-            this.textDescription3.Size = new System.Drawing.Size(259, 87);
-            this.textDescription3.TabIndex = 11;
+            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnClose.BackColor = System.Drawing.Color.Coral;
+            this.btnClose.Font = new System.Drawing.Font("Harlow Solid Italic", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnClose.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnClose.Location = new System.Drawing.Point(1063, 1050);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(390, 113);
+            this.btnClose.TabIndex = 13;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // LookUpReading
+            // PhysicalReading
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::tarot.Resource.aibackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(963, 629);
+            this.ClientSize = new System.Drawing.Size(1906, 1329);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Cursor = System.Windows.Forms.Cursors.PanNW;
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(979, 668);
-            this.MinimumSize = new System.Drawing.Size(979, 668);
-            this.Name = "LookUpReading";
-            this.Text = "Look Up A Reading";
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximumSize = new System.Drawing.Size(1932, 1400);
+            this.MinimumSize = new System.Drawing.Size(1932, 1219);
+            this.Name = "PhysicalReading";
+            this.Text = "Enter a Reading";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCard1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCard2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCard2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCard1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -474,11 +715,12 @@ namespace tarot
         private System.Windows.Forms.ComboBox listName1;
         private System.Windows.Forms.TextBox textDescription3;
         private System.Windows.Forms.TextBox textDescription2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBoxReversed3;
+        private System.Windows.Forms.CheckBox checkBoxReversed2;
         private System.Windows.Forms.ComboBox listName3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxReversed1;
         private System.Windows.Forms.TextBox textDescription1;
         private System.Windows.Forms.ComboBox listName2;
+        private System.Windows.Forms.Button btnClose;
     }
 }

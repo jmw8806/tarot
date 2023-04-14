@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Journal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journal.Designer.cs">
+      <DependentUpon>Journal.cs</DependentUpon>
+    </Compile>
     <Compile Include="TarotMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Journal.resx">
+      <DependentUpon>Journal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TarotMain.resx">
       <DependentUpon>TarotMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +328,7 @@
     <None Include="Resources\swords_14.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\tumblr_odczwtBEcN1runoqyo5_540.webp" />
     <None Include="Resources\wands_01.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -377,6 +387,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\aibackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_odczwtBEcN1runoqyo5_540.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ namespace tarot
         [STAThread]
         static void Main()
         {
+            AppData.DataPath = Application.StartupPath + "\\data\\";
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Tarot());

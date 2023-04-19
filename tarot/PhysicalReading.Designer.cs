@@ -44,6 +44,7 @@ namespace tarot
             this.textDescription1 = new System.Windows.Forms.TextBox();
             this.listName2 = new System.Windows.Forms.ComboBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard2)).BeginInit();
@@ -56,7 +57,8 @@ namespace tarot
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.36719F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.63281F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 537F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 538F));
+            this.tableLayoutPanel1.Controls.Add(this.btnSave, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.textDescription3, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.textDescription2, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.checkBoxReversed3, 2, 2);
@@ -91,12 +93,12 @@ namespace tarot
             this.textDescription3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textDescription3.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDescription3.ForeColor = System.Drawing.Color.Coral;
-            this.textDescription3.Location = new System.Drawing.Point(996, 791);
+            this.textDescription3.Location = new System.Drawing.Point(995, 791);
             this.textDescription3.Margin = new System.Windows.Forms.Padding(8, 6, 6, 6);
             this.textDescription3.Multiline = true;
             this.textDescription3.Name = "textDescription3";
             this.textDescription3.ReadOnly = true;
-            this.textDescription3.Size = new System.Drawing.Size(524, 241);
+            this.textDescription3.Size = new System.Drawing.Size(525, 241);
             this.textDescription3.TabIndex = 11;
             this.textDescription3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -107,7 +109,7 @@ namespace tarot
             this.textDescription2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textDescription2.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDescription2.ForeColor = System.Drawing.Color.Coral;
-            this.textDescription2.Location = new System.Drawing.Point(516, 791);
+            this.textDescription2.Location = new System.Drawing.Point(515, 791);
             this.textDescription2.Margin = new System.Windows.Forms.Padding(8, 6, 6, 6);
             this.textDescription2.Multiline = true;
             this.textDescription2.Name = "textDescription2";
@@ -139,7 +141,7 @@ namespace tarot
             this.checkBoxReversed2.Enabled = false;
             this.checkBoxReversed2.Font = new System.Drawing.Font("Ink Free", 12.875F, System.Drawing.FontStyle.Bold);
             this.checkBoxReversed2.ForeColor = System.Drawing.Color.Gold;
-            this.checkBoxReversed2.Location = new System.Drawing.Point(650, 723);
+            this.checkBoxReversed2.Location = new System.Drawing.Point(649, 723);
             this.checkBoxReversed2.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxReversed2.Name = "checkBoxReversed2";
             this.checkBoxReversed2.Size = new System.Drawing.Size(195, 47);
@@ -238,7 +240,7 @@ namespace tarot
             "Knight of Pentacles",
             "Queen of Pentacles",
             "King of Pentacles"});
-            this.listName3.Location = new System.Drawing.Point(1014, 654);
+            this.listName3.Location = new System.Drawing.Point(1013, 654);
             this.listName3.Margin = new System.Windows.Forms.Padding(6);
             this.listName3.Name = "listName3";
             this.listName3.Size = new System.Drawing.Size(486, 47);
@@ -249,7 +251,7 @@ namespace tarot
             // 
             this.imgCard3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgCard3.Image = global::tarot.Resource.back;
-            this.imgCard3.Location = new System.Drawing.Point(1087, 33);
+            this.imgCard3.Location = new System.Drawing.Point(1086, 33);
             this.imgCard3.Margin = new System.Windows.Forms.Padding(6);
             this.imgCard3.Name = "imgCard3";
             this.imgCard3.Size = new System.Drawing.Size(340, 581);
@@ -261,7 +263,7 @@ namespace tarot
             // 
             this.imgCard2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgCard2.Image = global::tarot.Resource.back;
-            this.imgCard2.Location = new System.Drawing.Point(578, 33);
+            this.imgCard2.Location = new System.Drawing.Point(577, 33);
             this.imgCard2.Margin = new System.Windows.Forms.Padding(6);
             this.imgCard2.Name = "imgCard2";
             this.imgCard2.Size = new System.Drawing.Size(340, 581);
@@ -273,7 +275,7 @@ namespace tarot
             // 
             this.imgCard1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgCard1.Image = global::tarot.Resource.back;
-            this.imgCard1.Location = new System.Drawing.Point(84, 33);
+            this.imgCard1.Location = new System.Drawing.Point(83, 33);
             this.imgCard1.Margin = new System.Windows.Forms.Padding(6);
             this.imgCard1.Name = "imgCard1";
             this.imgCard1.Size = new System.Drawing.Size(340, 581);
@@ -451,7 +453,7 @@ namespace tarot
             "Knight of Pentacles",
             "Queen of Pentacles",
             "King of Pentacles"});
-            this.listName1.Location = new System.Drawing.Point(11, 654);
+            this.listName1.Location = new System.Drawing.Point(10, 654);
             this.listName1.Margin = new System.Windows.Forms.Padding(6);
             this.listName1.Name = "listName1";
             this.listName1.Size = new System.Drawing.Size(486, 47);
@@ -486,7 +488,7 @@ namespace tarot
             this.textDescription1.Multiline = true;
             this.textDescription1.Name = "textDescription1";
             this.textDescription1.ReadOnly = true;
-            this.textDescription1.Size = new System.Drawing.Size(494, 241);
+            this.textDescription1.Size = new System.Drawing.Size(493, 241);
             this.textDescription1.TabIndex = 9;
             this.textDescription1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -660,7 +662,7 @@ namespace tarot
             "Knight of Pentacles",
             "Queen of Pentacles",
             "King of Pentacles"});
-            this.listName2.Location = new System.Drawing.Point(514, 654);
+            this.listName2.Location = new System.Drawing.Point(513, 654);
             this.listName2.Margin = new System.Windows.Forms.Padding(6);
             this.listName2.Name = "listName2";
             this.listName2.Size = new System.Drawing.Size(468, 47);
@@ -674,13 +676,28 @@ namespace tarot
             this.btnClose.Font = new System.Drawing.Font("Harlow Solid Italic", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnClose.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnClose.Location = new System.Drawing.Point(1062, 1050);
+            this.btnClose.Location = new System.Drawing.Point(1061, 1050);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(390, 113);
             this.btnClose.TabIndex = 13;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSave.BackColor = System.Drawing.Color.Coral;
+            this.btnSave.Font = new System.Drawing.Font("Harlow Solid Italic", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnSave.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSave.Location = new System.Drawing.Point(58, 1050);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(390, 113);
+            this.btnSave.TabIndex = 14;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // PhysicalReading
             // 
@@ -724,5 +741,6 @@ namespace tarot
         private System.Windows.Forms.TextBox textDescription1;
         private System.Windows.Forms.ComboBox listName2;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
     }
 }

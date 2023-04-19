@@ -65,7 +65,7 @@ namespace DataObjects
         }
         public string getReflection()
         {
-            return _reflection;
+            return _reflection; ;
         }
     }
 }

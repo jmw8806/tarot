@@ -14,6 +14,7 @@ namespace tarot
         string[] _card1 = new string[5];
         string[] _card2 = new string[5];
         string[] _card3 = new string[5];
+        bool[] _isReversedList = { false, false, false };
         
 
         public PhysicalReading()
@@ -39,11 +40,13 @@ namespace tarot
                 textDescription1.Text = _card1[3];
                 card1Img.RotateFlip(RotateFlipType.Rotate180FlipX);
                 imgCard1.Image = card1Img;
+                _isReversedList[0] = true;
             }
             else
             {
                 textDescription1.Text = _card1[2];
                 imgCard1.Image = (Image)_rm.GetObject(_card1[4]);
+                _isReversedList[0] = false;
             }
            
         }
@@ -66,11 +69,13 @@ namespace tarot
                 textDescription2.Text = _card2[3];
                 card2Img.RotateFlip(RotateFlipType.Rotate180FlipX);
                 imgCard2.Image = card2Img;
+                _isReversedList[1] = true;
             }
             else
             {
                 textDescription2.Text = _card2[2];
                 imgCard2.Image = (Image)_rm.GetObject(_card2[4]);
+                _isReversedList[1] = false;
             }
         }
 
@@ -94,17 +99,26 @@ namespace tarot
                 textDescription3.Text = _card3[3];
                 card3Img.RotateFlip(RotateFlipType.Rotate180FlipX);
                 imgCard3.Image = card3Img;
+                _isReversedList[2] = true;
             }
             else
             {
                 textDescription3.Text = _card3[2];
                 imgCard3.Image = (Image)_rm.GetObject(_card3[4]);
+                _isReversedList[2] = false;
             }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            Journal.setJournalEntry(_card1[0], _card2[0], _card3[0], _isReversedList);
+            JournalEntry journal = new JournalEntry();
+            journal.Show();
         }
     }
 }

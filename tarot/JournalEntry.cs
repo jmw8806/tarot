@@ -138,17 +138,14 @@ namespace tarot
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            _date = DateTime.UtcNow.Date;
-            _saveReading = new Reading(_date.ToString("MM/dd/yyyy"), _card1Id, _card2Id, _card3Id, _isReverse1, _isReverse2, _isReverse3, _journal_entry);
+            _date = DateTime.Now;
+            _saveReading = new Reading(_date.ToString("MMMM dd, yyyy HH:mm:ss"), _card1Id, _card2Id, _card3Id, _isReverse1, _isReverse2, _isReverse3, _journal_entry);
             _readings.Add(_saveReading);
             try
             {
                 Journal.saveToJournal(_readings);
                 MessageBox.Show("Your entry was saved");
-                foreach (Reading item in _readings)
-                {
-                    listFileList.Items.Add(item.getDate());
-                }
+                
             }
             catch (Exception ex)
             {

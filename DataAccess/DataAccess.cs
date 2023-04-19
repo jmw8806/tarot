@@ -86,10 +86,11 @@ namespace DataAccess
                 foreach (Reading reading in readings)
                 {
                     line += reading.getDate() + "\t" + reading.getCard1Id() + "\t" + reading.getCard2Id() + "\t" + reading.getCard3Id() + "\t" +
-                    reading.isReverse1() + "\t" + reading.isReverse2() + "\t" + reading.isReverse3() + "\t" + reading.getReflection();
+                    reading.isReverse1() + "\t" + reading.isReverse2() + "\t" + reading.isReverse3() + "\t" + reading.getReflection() + "\n";
 
-                    fileWriter.WriteLine(line);
+  
                 }
+                fileWriter.WriteLine(line);
             }
             catch (Exception)
             {

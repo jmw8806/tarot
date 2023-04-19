@@ -35,12 +35,12 @@ namespace DataObjects
         }
         public string getCardUprightDescription()
         {
-            return _upright_description;
+            return _upright_description.ToLower();
         }
 
         public string getCardReversedDescription()
         {
-            return _reversed_description;
+            return _reversed_description.ToLower();
         }
 
         public string getCardImage()

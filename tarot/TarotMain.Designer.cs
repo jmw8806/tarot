@@ -61,6 +61,8 @@ namespace tarot
             this.lblCardDescription2 = new System.Windows.Forms.Label();
             this.lblCardDescription1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.menuOpen = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -69,15 +71,15 @@ namespace tarot
             // 
             // btnNewFortune
             // 
-            this.btnNewFortune.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnNewFortune.BackColor = System.Drawing.Color.Coral;
             this.btnNewFortune.FlatAppearance.BorderSize = 0;
             this.btnNewFortune.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewFortune.Font = new System.Drawing.Font("Harlow Solid Italic", 14.1F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewFortune.ForeColor = System.Drawing.Color.Coral;
-            this.btnNewFortune.Location = new System.Drawing.Point(677, 1423);
+            this.btnNewFortune.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, System.Drawing.FontStyle.Italic);
+            this.btnNewFortune.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnNewFortune.Location = new System.Drawing.Point(318, 1423);
             this.btnNewFortune.Margin = new System.Windows.Forms.Padding(2);
             this.btnNewFortune.Name = "btnNewFortune";
-            this.btnNewFortune.Size = new System.Drawing.Size(452, 112);
+            this.btnNewFortune.Size = new System.Drawing.Size(389, 112);
             this.btnNewFortune.TabIndex = 0;
             this.btnNewFortune.Text = "New Fortune";
             this.btnNewFortune.UseVisualStyleBackColor = false;
@@ -231,15 +233,17 @@ namespace tarot
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuOpen,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 38);
             this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(186, 44);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -249,7 +253,7 @@ namespace tarot
             this.menuLibraray,
             this.physicalReadingMenus});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(90, 36);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(90, 38);
             this.aboutToolStripMenuItem.Text = "Tools";
             // 
             // menuLibraray
@@ -271,7 +275,7 @@ namespace tarot
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem1});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 38);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // helpToolStripMenuItem1
@@ -283,7 +287,7 @@ namespace tarot
             // lblCard1
             // 
             this.lblCard1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lblCard1.Font = new System.Drawing.Font("Harlow Solid Italic", 16.25F, System.Drawing.FontStyle.Italic);
+            this.lblCard1.Font = new System.Drawing.Font("Ink Free", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCard1.ForeColor = System.Drawing.Color.Coral;
             this.lblCard1.Location = new System.Drawing.Point(191, 883);
             this.lblCard1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -298,7 +302,7 @@ namespace tarot
             // lblCard2
             // 
             this.lblCard2.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lblCard2.Font = new System.Drawing.Font("Harlow Solid Italic", 16.25F, System.Drawing.FontStyle.Italic);
+            this.lblCard2.Font = new System.Drawing.Font("Ink Free", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCard2.ForeColor = System.Drawing.Color.Coral;
             this.lblCard2.Location = new System.Drawing.Point(913, 883);
             this.lblCard2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -313,7 +317,7 @@ namespace tarot
             // lblCard3
             // 
             this.lblCard3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lblCard3.Font = new System.Drawing.Font("Harlow Solid Italic", 16.25F, System.Drawing.FontStyle.Italic);
+            this.lblCard3.Font = new System.Drawing.Font("Ink Free", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCard3.ForeColor = System.Drawing.Color.Coral;
             this.lblCard3.Location = new System.Drawing.Point(1650, 883);
             this.lblCard3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -421,7 +425,7 @@ namespace tarot
             // lblCardDescription3
             // 
             this.lblCardDescription3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lblCardDescription3.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, System.Drawing.FontStyle.Italic);
+            this.lblCardDescription3.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCardDescription3.ForeColor = System.Drawing.Color.Coral;
             this.lblCardDescription3.Location = new System.Drawing.Point(1650, 1023);
             this.lblCardDescription3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -436,7 +440,7 @@ namespace tarot
             // lblCardDescription2
             // 
             this.lblCardDescription2.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lblCardDescription2.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, System.Drawing.FontStyle.Italic);
+            this.lblCardDescription2.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCardDescription2.ForeColor = System.Drawing.Color.Coral;
             this.lblCardDescription2.Location = new System.Drawing.Point(913, 1023);
             this.lblCardDescription2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -451,7 +455,7 @@ namespace tarot
             // lblCardDescription1
             // 
             this.lblCardDescription1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lblCardDescription1.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, System.Drawing.FontStyle.Italic);
+            this.lblCardDescription1.Font = new System.Drawing.Font("Ink Free", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCardDescription1.ForeColor = System.Drawing.Color.Coral;
             this.lblCardDescription1.Location = new System.Drawing.Point(190, 1023);
             this.lblCardDescription1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -465,20 +469,43 @@ namespace tarot
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnSave.BackColor = System.Drawing.Color.Coral;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Harlow Solid Italic", 14.1F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Coral;
-            this.btnSave.Location = new System.Drawing.Point(1393, 1423);
+            this.btnSave.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, System.Drawing.FontStyle.Italic);
+            this.btnSave.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnSave.Location = new System.Drawing.Point(1054, 1423);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(452, 112);
+            this.btnSave.Size = new System.Drawing.Size(389, 112);
             this.btnSave.TabIndex = 29;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Visible = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Coral;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, System.Drawing.FontStyle.Italic);
+            this.btnExit.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnExit.Location = new System.Drawing.Point(1780, 1423);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(389, 112);
+            this.btnExit.TabIndex = 30;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // menuOpen
+            // 
+            this.menuOpen.Name = "menuOpen";
+            this.menuOpen.Size = new System.Drawing.Size(359, 44);
+            this.menuOpen.Text = "Open";
+            this.menuOpen.Click += new System.EventHandler(this.menuOpen_Click);
             // 
             // Tarot
             // 
@@ -488,6 +515,7 @@ namespace tarot
             this.BackgroundImage = global::tarot.Resource.aibackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(2495, 1579);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblCardDescription3);
             this.Controls.Add(this.lblCardDescription2);
@@ -521,7 +549,7 @@ namespace tarot
             this.MaximumSize = new System.Drawing.Size(2521, 1650);
             this.MinimumSize = new System.Drawing.Size(2521, 1650);
             this.Name = "Tarot";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tarot Reader";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Tarot_Load);
@@ -567,6 +595,8 @@ namespace tarot
         private System.Windows.Forms.Label lblCardDescription1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ToolStripMenuItem physicalReadingMenus;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.ToolStripMenuItem menuOpen;
     }
 }
 

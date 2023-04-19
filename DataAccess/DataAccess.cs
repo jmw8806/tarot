@@ -46,26 +46,58 @@ namespace DataAccess
 
         }
 
-        public void SaveSpread(string[][] cards)
+        public List<Reading> LoadReadings()
         {
+            List<Reading> readings = new List<Reading>();
             try
             {
-                string line = "";
-                StreamWriter fileWriter = new StreamWriter(AppData.DataPath + "\\save_data.txt");
-                for(int i = 0; i < cards.Length; i++)
+                StreamReader fileReader = new StreamReader(AppData.DataPath + "\\save_data.txt");
+                while (fileReader.EndOfStream == false)
                 {
-                    for(int j = 0; j < 3; j++)
+                    string line = fileReader.ReadLine();
+                    string[] parts;
+                    if(line.Length > 4)
                     {
-                        line += j.ToString() + "\t";
+                        parts = line.Split('\t');
+                        
+                        Reading reading = new Reading(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7]);
+                        readings.Add(reading);
                     }
-                    line += cards[i][4].ToString() + "\n";                   
                 }
-
-                fileWriter.WriteLine(line);
+                fileReader.Close();
             }
             catch (Exception)
             {
                 throw;
+            }
+
+            return readings;
+        }
+
+        public void SaveSpread(List<Reading> readings)
+        {
+            StreamWriter fileWriter = null;
+            try
+            {
+
+                string line = "";
+                fileWriter = new StreamWriter(AppData.DataPath + "\\save_data.txt");
+                
+                foreach (Reading reading in readings)
+                {
+                    line += reading.getDate() + "\t" + reading.getCard1Id() + "\t" + reading.getCard2Id() + "\t" + reading.getCard3Id() + "\t" +
+                    reading.isReverse1() + "\t" + reading.isReverse2() + "\t" + reading.isReverse3() + "\t" + reading.getReflection();
+
+                    fileWriter.WriteLine(line);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                fileWriter.Close();
             }
         }
           

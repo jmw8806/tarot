@@ -121,7 +121,26 @@ namespace tarot
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Journal journal = new Journal();
+            Journal.setJournalEntry(_card1[0], _card2[0], _card3[0], _isReversedList);
+            JournalEntry journal = new JournalEntry();
+            journal.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+         
+        }
+
+        private void menuOpen_Click(object sender, EventArgs e)
+        {
+          
+            JournalEntry journal = new JournalEntry();
             journal.Show();
         }
     }

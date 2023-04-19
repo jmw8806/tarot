@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Journal.cs">
+    <Compile Include="JournalEntry.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Journal.Designer.cs">
-      <DependentUpon>Journal.cs</DependentUpon>
+    <Compile Include="JournalEntry.Designer.cs">
+      <DependentUpon>JournalEntry.cs</DependentUpon>
     </Compile>
     <Compile Include="TarotMain.cs">
       <SubType>Form</SubType>
@@ -77,8 +77,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Journal.resx">
-      <DependentUpon>Journal.cs</DependentUpon>
+    <EmbeddedResource Include="JournalEntry.resx">
+      <DependentUpon>JournalEntry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TarotMain.resx">
       <DependentUpon>TarotMain.cs</DependentUpon>
@@ -116,6 +116,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{1A307FBB-EBBB-4713-9239-8E66C4DE55BF}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataObjects\DataObjects.csproj">
       <Project>{83583905-f7b4-49ca-90fd-e6054c73d378}</Project>
       <Name>DataObjects</Name>
@@ -390,6 +394,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tumblr_odczwtBEcN1runoqyo5_540.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\old-paper.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

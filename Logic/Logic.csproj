@@ -44,6 +44,7 @@
     <Compile Include="CardManager.cs" />
     <Compile Include="Deck.cs" />
     <Compile Include="Helpers.cs" />
+    <Compile Include="Journal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spread.cs" />
   </ItemGroup>

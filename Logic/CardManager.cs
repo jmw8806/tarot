@@ -8,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class CardManager
+    public static class CardManager
     {
-        Deck _deck = new Deck();
         public static string[] getCardById(List<Card> deck, string cardId) {
 
             string[] cardById = new string[5];
@@ -23,6 +22,6 @@ namespace Logic
             }
             return cardById;
         }
-              
+
     }
 }

@@ -45,7 +45,6 @@ namespace tarot
             this.txtDescription3 = new System.Windows.Forms.TextBox();
             this.txtJournalEntry = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnOpen = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.listFileList = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -253,19 +252,6 @@ namespace tarot
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnOpen
-            // 
-            this.btnOpen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpen.Font = new System.Drawing.Font("Harlow Solid Italic", 16.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpen.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnOpen.Location = new System.Drawing.Point(1336, 1247);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(276, 83);
-            this.btnOpen.TabIndex = 15;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = true;
-            // 
             // btnClose
             // 
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -291,6 +277,7 @@ namespace tarot
             this.listFileList.Name = "listFileList";
             this.listFileList.Size = new System.Drawing.Size(414, 300);
             this.listFileList.TabIndex = 17;
+            this.listFileList.SelectedIndexChanged += new System.EventHandler(this.listFileList_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -382,7 +369,6 @@ namespace tarot
             this.ClientSize = new System.Drawing.Size(1774, 1529);
             this.Controls.Add(this.listFileList);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtJournalEntry);
             this.Controls.Add(this.txtDescription3);
@@ -436,7 +422,6 @@ namespace tarot
         private System.Windows.Forms.TextBox txtDescription3;
         private System.Windows.Forms.TextBox txtJournalEntry;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ListBox listFileList;
         private System.Windows.Forms.Panel panel1;

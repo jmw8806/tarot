@@ -12,7 +12,6 @@ namespace Logic
     {
         private static string[][] _journalEntry = new string[3][];
         private static DataAccessor _data = new DataAccessor();
-
         public static void setJournalEntry(string id1, string id2, string id3, bool[] isReversed)
         {
             Spread spread = new Spread();
@@ -91,6 +90,38 @@ namespace Logic
             {
                 throw;
             }
+        }
+
+        public static string[][] loadJournalEntry(List<Reading> readings, int index)
+        {
+            Deck deckObject = new Deck();
+            List<Card> deck = deckObject.newDeck();
+            Reading reading = readings[index];
+            string[] card1 = new string[7];
+            string[] card2 = new string[7];
+            string[] card3 = new string[7];
+            string[] tempcard1 = CardManager.getCardById(deck, reading.getCard1Id());
+            string[] tempcard2 = CardManager.getCardById(deck, reading.getCard2Id());
+            string[] tempcard3 = CardManager.getCardById(deck, reading.getCard3Id());
+                    
+            for(int i = 0; i < 5; i++)
+            {
+                card1[i] = tempcard1[i];
+                card2[i] = tempcard2[i];
+                card3[i] = tempcard3[i];
+            }
+
+            card1[5] = reading.isReverse1();
+            card1[6] = reading.getReflection();
+
+            card2[5] = reading.isReverse2();
+            card2[6] = reading.getReflection();
+
+            card3[5] = reading.isReverse3();
+            card3[6] = reading.getReflection();
+
+            string[][] journalEntry = { card1, card2, card3 };
+            return journalEntry;
         }
     }
 }

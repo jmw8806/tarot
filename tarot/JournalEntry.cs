@@ -29,7 +29,7 @@ namespace tarot
         string _journal_entry = "";
         Reading _saveReading = null;
         List<Reading> _readings = null;
-
+        
         public JournalEntry()
         {
             InitializeComponent();
@@ -123,7 +123,7 @@ namespace tarot
         {
             if (txtJournalEntry.Text == "")
             {
-                txtJournalEntry.Text = "Use this area to journal your intention and thoughts on your reading.";
+                txtJournalEntry.Text = "Enter your reflections here...";
             } 
             else
             {
@@ -152,6 +152,78 @@ namespace tarot
                 throw new Exception("Could not save at this time", ex);
             }
 
+        }
+
+        private void listFileList_RightToLeftChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listFileList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = listFileList.SelectedIndex;
+            _reading = Journal.loadJournalEntry(_readings, index);
+
+            if (_reading[0] != null || _reading[1] != null || _reading[2] != null)
+            {
+                string[] reading1 = _reading[0];
+                string[] reading2 = _reading[1];
+                string[] reading3 = _reading[2];
+                _isReverse1 = reading1[5];
+                _isReverse2 = reading2[5];
+                _isReverse3 = reading3[5];
+                _card1Id = reading1[0];
+                _card2Id = reading2[0];
+                _card3Id = reading3[0];
+                var reading1Img = (Image)_rm.GetObject(reading1[4]);
+                var reading2Img = (Image)_rm.GetObject(reading2[4]);
+                var reading3Img = (Image)_rm.GetObject(reading3[4]);
+
+                //reading 1
+                lblName1.Text = reading1[1];
+                imgCard1.Image = reading1Img;
+                lblReverse1.Text = _isReverse1;
+                txtDescription1.Text = reading1[2];
+                if (_isReverse1 == "Reversed")
+                {
+                    txtDescription1.Text = reading1[3];
+                    reading1Img.RotateFlip(RotateFlipType.Rotate180FlipX);
+                    imgCard1.Image = reading1Img;
+                }
+
+
+                //reading 2
+                lblName2.Text = reading2[1];
+                imgCard2.Image = reading2Img;
+                lblReverse2.Text = _isReverse2;
+                txtDescription2.Text = reading2[2];
+                if (_isReverse2 == "Reversed")
+                {
+                    txtDescription2.Text = reading2[3];
+                    reading2Img.RotateFlip(RotateFlipType.Rotate180FlipX);
+                    imgCard2.Image = reading2Img;
+                }
+
+                //reading 3
+                lblName3.Text = reading3[1];
+                imgCard3.Image = reading3Img;
+                lblReverse3.Text = _isReverse3;
+                txtDescription3.Text = reading3[2];
+                if (_isReverse3 == "Reversed")
+                {
+                    txtDescription3.Text = reading3[3];
+                    reading3Img.RotateFlip(RotateFlipType.Rotate180FlipX);
+                    imgCard3.Image = reading3Img;
+                }
+                txtJournalEntry.Text = reading1[6];
+            }
+            else
+            {
+                var cardBack = (Image)_rm.GetObject("back.jpg");
+                imgCard1.Image = cardBack;
+                imgCard2.Image = cardBack;
+                imgCard3.Image = cardBack;
+            }
         }
     }
 }

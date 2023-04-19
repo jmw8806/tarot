@@ -52,6 +52,7 @@ namespace tarot
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard3)).BeginInit();
@@ -282,6 +283,7 @@ namespace tarot
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox3);
@@ -358,6 +360,22 @@ namespace tarot
             this.textBox4.TabIndex = 12;
             this.textBox4.TabStop = false;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Coral;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Enabled = false;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Harlow Solid Italic", 16.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnDelete.Location = new System.Drawing.Point(1209, 1135);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(276, 83);
+            this.btnDelete.TabIndex = 19;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // JournalEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -429,5 +447,6 @@ namespace tarot
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

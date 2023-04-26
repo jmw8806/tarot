@@ -31,6 +31,7 @@ namespace tarot
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhysicalReading));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnSave = new System.Windows.Forms.Button();
             this.textDescription3 = new System.Windows.Forms.TextBox();
             this.textDescription2 = new System.Windows.Forms.TextBox();
             this.checkBoxReversed3 = new System.Windows.Forms.CheckBox();
@@ -44,7 +45,6 @@ namespace tarot
             this.textDescription1 = new System.Windows.Forms.TextBox();
             this.listName2 = new System.Windows.Forms.ComboBox();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard2)).BeginInit();
@@ -57,7 +57,7 @@ namespace tarot
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.36719F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.63281F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 538F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 539F));
             this.tableLayoutPanel1.Controls.Add(this.btnSave, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.textDescription3, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.textDescription2, 1, 3);
@@ -86,6 +86,23 @@ namespace tarot
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1526, 1176);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSave.BackColor = System.Drawing.Color.Coral;
+            this.btnSave.Enabled = false;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Harlow Solid Italic", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnSave.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSave.Location = new System.Drawing.Point(58, 1050);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(390, 113);
+            this.btnSave.TabIndex = 14;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // textDescription3
             // 
             this.textDescription3.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -93,12 +110,12 @@ namespace tarot
             this.textDescription3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textDescription3.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDescription3.ForeColor = System.Drawing.Color.Coral;
-            this.textDescription3.Location = new System.Drawing.Point(995, 791);
+            this.textDescription3.Location = new System.Drawing.Point(994, 791);
             this.textDescription3.Margin = new System.Windows.Forms.Padding(8, 6, 6, 6);
             this.textDescription3.Multiline = true;
             this.textDescription3.Name = "textDescription3";
             this.textDescription3.ReadOnly = true;
-            this.textDescription3.Size = new System.Drawing.Size(525, 241);
+            this.textDescription3.Size = new System.Drawing.Size(526, 241);
             this.textDescription3.TabIndex = 11;
             this.textDescription3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -109,7 +126,7 @@ namespace tarot
             this.textDescription2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textDescription2.Font = new System.Drawing.Font("Ink Free", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDescription2.ForeColor = System.Drawing.Color.Coral;
-            this.textDescription2.Location = new System.Drawing.Point(515, 791);
+            this.textDescription2.Location = new System.Drawing.Point(514, 791);
             this.textDescription2.Margin = new System.Windows.Forms.Padding(8, 6, 6, 6);
             this.textDescription2.Multiline = true;
             this.textDescription2.Name = "textDescription2";
@@ -125,7 +142,7 @@ namespace tarot
             this.checkBoxReversed3.Enabled = false;
             this.checkBoxReversed3.Font = new System.Drawing.Font("Ink Free", 12.875F, System.Drawing.FontStyle.Bold);
             this.checkBoxReversed3.ForeColor = System.Drawing.Color.Gold;
-            this.checkBoxReversed3.Location = new System.Drawing.Point(1159, 723);
+            this.checkBoxReversed3.Location = new System.Drawing.Point(1158, 723);
             this.checkBoxReversed3.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxReversed3.Name = "checkBoxReversed3";
             this.checkBoxReversed3.Size = new System.Drawing.Size(195, 47);
@@ -141,7 +158,7 @@ namespace tarot
             this.checkBoxReversed2.Enabled = false;
             this.checkBoxReversed2.Font = new System.Drawing.Font("Ink Free", 12.875F, System.Drawing.FontStyle.Bold);
             this.checkBoxReversed2.ForeColor = System.Drawing.Color.Gold;
-            this.checkBoxReversed2.Location = new System.Drawing.Point(649, 723);
+            this.checkBoxReversed2.Location = new System.Drawing.Point(648, 723);
             this.checkBoxReversed2.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxReversed2.Name = "checkBoxReversed2";
             this.checkBoxReversed2.Size = new System.Drawing.Size(195, 47);
@@ -263,7 +280,7 @@ namespace tarot
             // 
             this.imgCard2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgCard2.Image = global::tarot.Resource.back;
-            this.imgCard2.Location = new System.Drawing.Point(577, 33);
+            this.imgCard2.Location = new System.Drawing.Point(576, 33);
             this.imgCard2.Margin = new System.Windows.Forms.Padding(6);
             this.imgCard2.Name = "imgCard2";
             this.imgCard2.Size = new System.Drawing.Size(340, 581);
@@ -467,7 +484,7 @@ namespace tarot
             this.checkBoxReversed1.Enabled = false;
             this.checkBoxReversed1.Font = new System.Drawing.Font("Ink Free", 12.875F, System.Drawing.FontStyle.Bold);
             this.checkBoxReversed1.ForeColor = System.Drawing.Color.Gold;
-            this.checkBoxReversed1.Location = new System.Drawing.Point(156, 723);
+            this.checkBoxReversed1.Location = new System.Drawing.Point(155, 723);
             this.checkBoxReversed1.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxReversed1.Name = "checkBoxReversed1";
             this.checkBoxReversed1.Size = new System.Drawing.Size(195, 47);
@@ -488,7 +505,7 @@ namespace tarot
             this.textDescription1.Multiline = true;
             this.textDescription1.Name = "textDescription1";
             this.textDescription1.ReadOnly = true;
-            this.textDescription1.Size = new System.Drawing.Size(493, 241);
+            this.textDescription1.Size = new System.Drawing.Size(492, 241);
             this.textDescription1.TabIndex = 9;
             this.textDescription1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -662,7 +679,7 @@ namespace tarot
             "Knight of Pentacles",
             "Queen of Pentacles",
             "King of Pentacles"});
-            this.listName2.Location = new System.Drawing.Point(513, 654);
+            this.listName2.Location = new System.Drawing.Point(512, 654);
             this.listName2.Margin = new System.Windows.Forms.Padding(6);
             this.listName2.Name = "listName2";
             this.listName2.Size = new System.Drawing.Size(468, 47);
@@ -673,6 +690,7 @@ namespace tarot
             // 
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnClose.BackColor = System.Drawing.Color.Coral;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Harlow Solid Italic", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnClose.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -683,21 +701,6 @@ namespace tarot
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSave.BackColor = System.Drawing.Color.Coral;
-            this.btnSave.Font = new System.Drawing.Font("Harlow Solid Italic", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.btnSave.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSave.Location = new System.Drawing.Point(58, 1050);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(390, 113);
-            this.btnSave.TabIndex = 14;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // PhysicalReading
             // 

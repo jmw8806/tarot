@@ -30,6 +30,10 @@ namespace tarot
             _card1 = _spread.findCardByID(selectedIndex.ToString());
             textDescription1.Text = _card1[2];
             imgCard1.Image = (Image)_rm.GetObject(_card1[4]);
+            if(_card1[2] != null && _card2[2] != null && _card3[3] != null)
+                {
+                btnSave.Enabled = true;
+                }
         }
 
         private void checkBoxReversed1_CheckedChanged(object sender, EventArgs e)
@@ -59,6 +63,10 @@ namespace tarot
             _card2 = _spread.findCardByID(selectedIndex.ToString());
             textDescription2.Text = _card2[2];
             imgCard2.Image = (Image)_rm.GetObject(_card2[4]);
+            if (_card1[2] != null && _card2[2] != null && _card3[3] != null)
+            {
+                btnSave.Enabled = true;
+            }
         }
 
         private void checkBoxReversed2_CheckedChanged(object sender, EventArgs e)
@@ -88,6 +96,10 @@ namespace tarot
             _card3 = _spread.findCardByID(selectedIndex.ToString());
             textDescription3.Text = _card3[2];
             imgCard3.Image = (Image)_rm.GetObject(_card3[4]);
+            if (_card1[2] != null && _card2[2] != null && _card3[3] != null)
+            {
+                btnSave.Enabled = true;
+            }
 
         }
 

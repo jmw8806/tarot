@@ -37,7 +37,10 @@ namespace tarot
 
         private void Journal_Load(object sender, EventArgs e)
         {
-            
+            if(lblName1.Text == "" && lblName2.Text == "" && lblName3.Text == "")
+            {
+                btnSave.Enabled = false;
+            }
             _readings = Journal.getAllEntries();
             _reading = Journal.getJournalEntry();
             foreach(Reading item in _readings)
@@ -164,6 +167,7 @@ namespace tarot
 
         private void listFileList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            btnSave.Enabled = false;
             int index = listFileList.SelectedIndex;
             _reading = Journal.loadJournalEntry(_readings, index);
             btnDelete.Enabled = true;

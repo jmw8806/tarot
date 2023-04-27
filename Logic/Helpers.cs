@@ -18,6 +18,11 @@ namespace Logic
         {
             return _random.Next(2) == 1;
         }
+
+        public void openHelper()
+        {
+            DataAccess.DataAccessor.openHelper();
+        }
     }
 
     

@@ -165,7 +165,46 @@ namespace tarot
         }
 
 
-        private void listFileList_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+           int index = listFileList.SelectedIndex;
+            
+            try
+            {
+                listFileList.Items.Clear();
+                _readings.RemoveAt(index);
+                foreach (Reading item in _readings)
+                {
+                    listFileList.Items.Add(item.getDate());
+                }
+                var cardBack = (Image)_rm.GetObject("back.jpg");
+                imgCard1.Image = cardBack;
+                imgCard2.Image = cardBack;
+                imgCard3.Image = cardBack;
+                lblName1.ResetText();
+                lblName2.ResetText();
+                lblName3.ResetText();
+                lblReverse1.ResetText();
+                lblReverse2.ResetText();
+                lblReverse3.ResetText();
+                txtDescription1.ResetText();
+                txtDescription2.ResetText();
+                txtDescription3.ResetText();
+                txtJournalEntry.ResetText();
+
+                Journal.saveToJournal(_readings);
+                MessageBox.Show("Entry successfully deleted.");
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Could not delete at this time", ex);
+            }
+
+        }
+
+        private void listFileList_DoubleClick(object sender, EventArgs e)
         {
             btnSave.Enabled = false;
             int index = listFileList.SelectedIndex;
@@ -232,44 +271,6 @@ namespace tarot
                 imgCard2.Image = cardBack;
                 imgCard3.Image = cardBack;
             }
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-           int index = listFileList.SelectedIndex;
-            
-            try
-            {
-                listFileList.Items.Clear();
-                _readings.RemoveAt(index);
-                foreach (Reading item in _readings)
-                {
-                    listFileList.Items.Add(item.getDate());
-                }
-                var cardBack = (Image)_rm.GetObject("back.jpg");
-                imgCard1.Image = cardBack;
-                imgCard2.Image = cardBack;
-                imgCard3.Image = cardBack;
-                lblName1.ResetText();
-                lblName2.ResetText();
-                lblName3.ResetText();
-                lblReverse1.ResetText();
-                lblReverse2.ResetText();
-                lblReverse3.ResetText();
-                txtDescription1.ResetText();
-                txtDescription2.ResetText();
-                txtDescription3.ResetText();
-                txtJournalEntry.ResetText();
-
-                Journal.saveToJournal(_readings);
-                MessageBox.Show("Entry successfully deleted.");
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Could not delete at this time", ex);
-            }
-
         }
     }
 }

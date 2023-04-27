@@ -1,6 +1,7 @@
 ﻿using DataObjects;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -101,6 +102,15 @@ namespace DataAccess
                 fileWriter.Close();
             }
         }
-          
+
+        public static void openHelper()
+        {
+            Process fileopener = new Process();
+
+            fileopener.StartInfo.FileName = AppData.DataPath + "\\tarotReaderHelp.pdf\\";
+            fileopener.StartInfo.Arguments = "\\tarotReaderHelp.pdf\\";
+            fileopener.Start();
+        }
+
     }
 }

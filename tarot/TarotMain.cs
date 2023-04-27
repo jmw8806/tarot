@@ -143,5 +143,10 @@ namespace tarot
             JournalEntry journal = new JournalEntry();
             journal.Show();
         }
+
+        private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            _helper.openHelper();
+        }
     }
 }

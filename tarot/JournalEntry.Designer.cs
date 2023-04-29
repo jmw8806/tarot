@@ -53,6 +53,7 @@ namespace tarot
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCard3)).BeginInit();
@@ -376,6 +377,21 @@ namespace tarot
             this.textBox4.TabIndex = 12;
             this.textBox4.TabStop = false;
             // 
+            // btnHelp
+            // 
+            this.btnHelp.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Help;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHelp.Font = new System.Drawing.Font("Harlow Solid Italic", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.ForeColor = System.Drawing.Color.Coral;
+            this.btnHelp.Location = new System.Drawing.Point(1502, 37);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(70, 70);
+            this.btnHelp.TabIndex = 19;
+            this.btnHelp.Text = "?";
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // JournalEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -385,6 +401,7 @@ namespace tarot
             this.BackgroundImage = global::tarot.Resource.tableBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1774, 1529);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.listFileList);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
@@ -410,7 +427,7 @@ namespace tarot
             this.MinimumSize = new System.Drawing.Size(1800, 1600);
             this.Name = "JournalEntry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Journal";
+            this.Text = "Journal / Reflections";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Journal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgCard1)).EndInit();
@@ -448,5 +465,6 @@ namespace tarot
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

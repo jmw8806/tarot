@@ -40,6 +40,7 @@ namespace tarot
             this.btnClose = new System.Windows.Forms.Button();
             this.lblReversedDescription = new System.Windows.Forms.TextBox();
             this.lblUprightDescription = new System.Windows.Forms.TextBox();
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgCardLibrary)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -209,6 +210,7 @@ namespace tarot
             this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox1.Controls.Add(this.btnHelp);
             this.groupBox1.Controls.Add(this.btnClose);
             this.groupBox1.Controls.Add(this.listLibrary);
             this.groupBox1.Controls.Add(this.lblUpright);
@@ -272,6 +274,20 @@ namespace tarot
             this.lblUprightDescription.TabIndex = 7;
             this.lblUprightDescription.Visible = false;
             // 
+            // btnHelp
+            // 
+            this.btnHelp.BackColor = System.Drawing.Color.Coral;
+            this.btnHelp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHelp.Font = new System.Drawing.Font("Harlow Solid Italic", 19.875F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnHelp.Location = new System.Drawing.Point(1461, 887);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(70, 70);
+            this.btnHelp.TabIndex = 10;
+            this.btnHelp.Text = "?";
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // TarotLibrary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -311,5 +327,6 @@ namespace tarot
         private System.Windows.Forms.TextBox lblReversedDescription;
         private System.Windows.Forms.TextBox lblUprightDescription;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

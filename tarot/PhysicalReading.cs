@@ -11,6 +11,7 @@ namespace tarot
     {
         Spread _spread = new Spread();
         ResourceManager _rm = new ResourceManager("Tarot.Resource", Assembly.GetExecutingAssembly());
+        Helpers _helper = new Helpers();
         string[] _card1 = new string[5];
         string[] _card2 = new string[5];
         string[] _card3 = new string[5];
@@ -24,16 +25,23 @@ namespace tarot
 
         private void listName1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int selectedIndex = listName1.SelectedIndex;
-            checkBoxReversed1.Enabled = true;
-            checkBoxReversed1.Checked = false;
-            _card1 = _spread.findCardByID(selectedIndex.ToString());
-            textDescription1.Text = _card1[2];
-            imgCard1.Image = (Image)_rm.GetObject(_card1[4]);
-            if(_card1[2] != null && _card2[2] != null && _card3[3] != null)
+            try
+            {
+                int selectedIndex = listName1.SelectedIndex;
+                checkBoxReversed1.Enabled = true;
+                checkBoxReversed1.Checked = false;
+                _card1 = _spread.findCardByID(selectedIndex.ToString());
+                textDescription1.Text = _card1[2];
+                imgCard1.Image = (Image)_rm.GetObject(_card1[4]);
+                if (_card1[2] != null && _card2[2] != null && _card3[3] != null)
                 {
-                btnSave.Enabled = true;
+                    btnSave.Enabled = true;
                 }
+            } 
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void checkBoxReversed1_CheckedChanged(object sender, EventArgs e)
@@ -131,6 +139,18 @@ namespace tarot
             Journal.setJournalEntry(_card1[0], _card2[0], _card3[0], _isReversedList);
             JournalEntry journal = new JournalEntry();
             journal.Show();
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _helper.openHelper();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

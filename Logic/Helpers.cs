@@ -21,7 +21,14 @@ namespace Logic
 
         public void openHelper()
         {
-            DataAccess.DataAccessor.openHelper();
+            try
+            {
+                DataAccess.DataAccessor.openHelper();
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Help is not available", ex);
+            }
         }
     }
 

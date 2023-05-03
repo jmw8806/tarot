@@ -111,7 +111,6 @@ namespace tarot
             this.lblName1.Name = "lblName1";
             this.lblName1.Size = new System.Drawing.Size(358, 64);
             this.lblName1.TabIndex = 4;
-            this.lblName1.Text = "name1";
             this.lblName1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblName2
@@ -123,7 +122,6 @@ namespace tarot
             this.lblName2.Name = "lblName2";
             this.lblName2.Size = new System.Drawing.Size(358, 64);
             this.lblName2.TabIndex = 5;
-            this.lblName2.Text = "name2";
             this.lblName2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblName3
@@ -135,7 +133,6 @@ namespace tarot
             this.lblName3.Name = "lblName3";
             this.lblName3.Size = new System.Drawing.Size(358, 64);
             this.lblName3.TabIndex = 6;
-            this.lblName3.Text = "name3";
             this.lblName3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblReverse1

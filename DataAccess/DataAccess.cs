@@ -13,7 +13,7 @@ namespace DataAccess
 {
     public class DataAccessor
     {
-  
+        // Accesses tarot_info.txt and returns a list of card objects that represent the tarot deck
         public List<Card> BuildCards()
         {
             List<Card> cards = new List<Card>();
@@ -47,6 +47,7 @@ namespace DataAccess
 
         }
 
+        // accesses the save_data.txt file and returns a list of Reading objects to be used to load saved journal entries.
         public List<Reading> LoadReadings()
         {
             List<Reading> readings = new List<Reading>();
@@ -75,6 +76,7 @@ namespace DataAccess
             return readings;
         }
 
+        // access the save_data.txt file to write data from the program to it. Specifically used for journal entries to be saved
         public void SaveSpread(List<Reading> readings)
         {
             StreamWriter fileWriter = null;
@@ -103,6 +105,7 @@ namespace DataAccess
             }
         }
 
+        // accesses the tarotReaderHelp.pdf "Help" file. This is the help documentation for the user.
         public static void openHelper()
         {
             Process fileopener = new Process();

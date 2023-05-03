@@ -8,13 +8,14 @@ using DataObjects;
 
 namespace Logic
 {
-    public class Spread
+    // Class that handles the "spread" of cards dealt to the user.
+    public class SpreadManager
     {
-        private Deck _deck = new Deck();
-        private string[][] _currentSpread = new string[3][]; 
+        private DeckManager _deck = new DeckManager();
         private Helpers _helper = new Helpers();
         private static string[][] _spread = new string[3][];
         
+        // Takes three cards ids as arguments, while loop continues until 3 unique cards are returned
         public string[][] newSpread(string id1, string id2, string id3)
         {
             try
@@ -36,7 +37,7 @@ namespace Logic
             }
         }
 
-        
+        // takes card ID as argument, returns the card with that ID.
         public string[] findCardByID(string cardID)
         {
             try

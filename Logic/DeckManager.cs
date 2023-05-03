@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class Deck
+    // Compiles a list of all Card objects.
+    public class DeckManager
     {
         private List<Card> _deck;
-        public Deck()
+        public DeckManager()
         {
             string[] card = new string[5];
 

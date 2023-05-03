@@ -10,6 +10,7 @@ namespace Logic
 {
     public static class CardManager
     {
+        // method takes a list of Card objects representing a deck and a card's ID and returns the data about that given card.
         public static string[] getCardById(List<Card> deck, string cardId) {
 
             string[] cardById = new string[5];

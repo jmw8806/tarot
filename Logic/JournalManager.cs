@@ -8,15 +8,17 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public static class  Journal
+    // All methods to handle Journal entries. 
+    public static class  JournalManager
     {
         private static string[][] _journalEntry = new string[3][];
         private static DataAccessor _data = new DataAccessor();
+        
         public static void setJournalEntry(string id1, string id2, string id3, bool[] isReversed)
         {
             try
             {
-                Spread spread = new Spread();
+                SpreadManager spread = new SpreadManager();
 
                 string[] card1 = spread.findCardByID(id1);
                 string[] card2 = spread.findCardByID(id2);
@@ -109,7 +111,7 @@ namespace Logic
         {
             try
             {
-                Deck deckObject = new Deck();
+                DeckManager deckObject = new DeckManager();
 
                 List<Card> deck = deckObject.newDeck();
                 Reading reading = readings[index];

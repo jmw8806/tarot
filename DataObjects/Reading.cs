@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataObjects
 {
+    // Represents a tarot reading of three cards, if they are drawn reversed, and a journal entry as the _relection. _date is a string representation
+    // of the date for when entries are saved.
     public class Reading
     {
         private string _date;

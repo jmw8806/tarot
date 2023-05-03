@@ -17,7 +17,7 @@ namespace tarot
     public partial class TarotLibrary : Form
     {
         ResourceManager _rm = new ResourceManager("Tarot.Resource", Assembly.GetExecutingAssembly());
-        Spread _spread = new Spread();
+        SpreadManager _spread = new SpreadManager();
         Helpers _helper = new Helpers();
         
         public TarotLibrary()
@@ -26,6 +26,7 @@ namespace tarot
             
         }
 
+        // load card information when index is selected
         private void listLibrary_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedIndex = listLibrary.SelectedIndex;

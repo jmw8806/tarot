@@ -40,7 +40,7 @@ namespace tarot
             this.label1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.label1.Font = new System.Drawing.Font("Harlow Solid Italic", 19.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Coral;
-            this.label1.Location = new System.Drawing.Point(557, 47);
+            this.label1.Location = new System.Drawing.Point(510, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 67);
             this.label1.TabIndex = 0;
@@ -53,9 +53,9 @@ namespace tarot
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.richTextBox1.Font = new System.Drawing.Font("Ink Free", 13.85F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.Coral;
-            this.richTextBox1.Location = new System.Drawing.Point(180, 160);
+            this.richTextBox1.Location = new System.Drawing.Point(83, 132);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(995, 514);
+            this.richTextBox1.Size = new System.Drawing.Size(1100, 569);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.TabStop = false;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");

@@ -11,7 +11,7 @@ namespace tarot
     {
         ResourceManager _rm = new ResourceManager("Tarot.Resource", Assembly.GetExecutingAssembly());
         Helpers _helper = new Helpers();
-        Spread _spread = new Spread();
+        SpreadManager _spread = new SpreadManager();
         string[] _card1;
         string[] _card2;
         string[] _card3;
@@ -27,11 +27,15 @@ namespace tarot
             try
             {
                 btnSave.Visible = true;
+                // new reading of three random cards obtained.
                 string[][] _newReading = _spread.newSpread(_helper.shuffleID(), _helper.shuffleID(), _helper.shuffleID());
 
                 _card1 = _newReading[0];
                 _card2 = _newReading[1];
                 _card3 = _newReading[2];
+
+                // Cards Information - randomly determines if card is drawn reveresed. If reversed, rotates image 180 degrees and displays
+                // the reversed card description.
 
 
                 // Card 1
@@ -124,7 +128,7 @@ namespace tarot
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Journal.setJournalEntry(_card1[0], _card2[0], _card3[0], _isReversedList);
+            JournalManager.setJournalEntry(_card1[0], _card2[0], _card3[0], _isReversedList);
             JournalEntry journal = new JournalEntry();
             journal.Show();
         }

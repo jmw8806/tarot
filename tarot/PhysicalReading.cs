@@ -9,7 +9,7 @@ namespace tarot
 {
     public partial class PhysicalReading : Form
     {
-        Spread _spread = new Spread();
+        SpreadManager _spread = new SpreadManager();
         ResourceManager _rm = new ResourceManager("Tarot.Resource", Assembly.GetExecutingAssembly());
         Helpers _helper = new Helpers();
         string[] _card1 = new string[5];
@@ -23,6 +23,7 @@ namespace tarot
             InitializeComponent();
         }
 
+        // load cards when index of pull down list changes
         private void listName1_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
@@ -43,7 +44,7 @@ namespace tarot
                 MessageBox.Show(ex.Message);
             }
         }
-
+        // change card details depending on if the cards is reversed or not. If reversed, flip card 180 degrees.
         private void checkBoxReversed1_CheckedChanged(object sender, EventArgs e)
         {
             var card1Img = (Image)_rm.GetObject(_card1[4]);
@@ -136,7 +137,7 @@ namespace tarot
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Journal.setJournalEntry(_card1[0], _card2[0], _card3[0], _isReversedList);
+            JournalManager.setJournalEntry(_card1[0], _card2[0], _card3[0], _isReversedList);
             JournalEntry journal = new JournalEntry();
             journal.Show();
         }

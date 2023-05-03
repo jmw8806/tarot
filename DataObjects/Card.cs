@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataObjects
 {
+    // Reperesents each tarot card
     public class Card
     {
         private string _id;

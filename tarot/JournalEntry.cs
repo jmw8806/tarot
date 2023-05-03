@@ -38,14 +38,11 @@ namespace tarot
 
         private void Journal_Load(object sender, EventArgs e)
         {
-            if(lblName1.Text == "" && lblName2.Text == "" && lblName3.Text == "")
-            {
-                btnSave.Enabled = false;
-            }
+            
             try
             {
-                _readings = Journal.getAllEntries();
-                _reading = Journal.getJournalEntry();
+                _readings = JournalManager.getAllEntries();
+                _reading = JournalManager.getJournalEntry();
                 foreach (Reading item in _readings)
                 {
                     listFileList.Items.Add(item.getDate());
@@ -102,6 +99,7 @@ namespace tarot
                         imgCard3.Image = reading3Img;
                     }
                 }
+                // if cards are not loaded, show image of card backs.
                 else
                 {
                     var cardBack = (Image)_rm.GetObject("back.jpg");
@@ -113,6 +111,12 @@ namespace tarot
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            btnSave.Enabled = true;
+            // if there are not three cards loaded, disable the Save button
+            if (lblName1.Text == "" || lblName2.Text == "" || lblName3.Text == "")
+            {
+                btnSave.Enabled = false;
             }
 
         }
@@ -154,7 +158,7 @@ namespace tarot
             _readings.Add(_saveReading);
             try
             {
-                Journal.saveToJournal(_readings);
+                JournalManager.saveToJournal(_readings);
                 MessageBox.Show("Your entry was saved");
 
                 listFileList.Items.Clear();
@@ -201,7 +205,7 @@ namespace tarot
                 txtDescription3.ResetText();
                 txtJournalEntry.ResetText();
 
-                Journal.saveToJournal(_readings);
+                JournalManager.saveToJournal(_readings);
                 MessageBox.Show("Entry successfully deleted.");
 
             }
@@ -218,7 +222,7 @@ namespace tarot
             int index = listFileList.SelectedIndex;
             try
             {
-                _reading = Journal.loadJournalEntry(_readings, index);
+                _reading = JournalManager.loadJournalEntry(_readings, index);
                 btnDelete.Enabled = true;
 
                 if (_reading[0] != null || _reading[1] != null || _reading[2] != null)

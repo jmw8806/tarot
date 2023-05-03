@@ -118,12 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Hi, I'm James Williams. 
+    <value>Hi, I’m James Williams, a computer software development student at Kirkwood Community College.
 
-I am a computer software development student at Kirkwood Community College.
+A hobby of mine is collecting tarot decks because I enjoy the different interpretations put into the artwork. 
 
-I enjoy collecting tarot decks because of the different interpretations put into the artwork.
+This was my inspiration to create this application as my .NET final project.
 
-This was my inspiration to create this application and I hope you enjoy it!</value>
+Enjoy!
+
+© 2023</value>
   </data>
 </root>
